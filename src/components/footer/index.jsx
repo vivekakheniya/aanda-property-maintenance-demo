@@ -7,7 +7,10 @@ const Footer = ({ logo }) => {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo + About */}
         <div className="flex flex-col items-start">
-          <img src={logo} alt="A & A Property Maintenance Kent Ltd" className="h-12 w-auto mb-4" />
+          {/* <img src={logo} alt="A & A Property Maintenance Kent Ltd" className="h-12 w-auto mb-4" /> */}
+           <span className="font-semibold text-lg text-orange-500 cursor-pointer">
+            A & A 
+          </span>
           <p className="text-sm leading-relaxed">
             Trusted professionals offering quality property maintenance across Kent, Surrey,
             Essex, and London. Fully insured & bonded for your peace of mind.

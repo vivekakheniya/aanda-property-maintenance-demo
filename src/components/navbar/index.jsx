@@ -25,14 +25,14 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-10 md:px-12 lg:px-16 py-3">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img
+          {/* <img
             src={logo}
             alt="logo"
             className="h-10 w-auto"
-          />
-          {/* <span className="font-semibold text-lg text-gray-800">
-            A & A Property Maintenance
-          </span> */}
+          /> */}
+          <span className="font-semibold text-lg text-gray-800 hover:text-orange-500 cursor-pointer">
+            A & A 
+          </span>
         </div>
 
         {/* Desktop Nav */}
