@@ -43,6 +43,7 @@ import HeroSection from "./components/hero-section";
 import AboutSection from "./components/about";
 import director from "/yogesh.jpg"
 import ContactSection from "./components/contact";
+import GallerySection from "./components/gallery";
 
 export default function App() {
   return (
@@ -51,6 +52,7 @@ export default function App() {
       <HeroSection logo={logo} />
       <ServicesSection />
       <AboutSection directorImage={director} />
+      <GallerySection />
       <ContactSection />
       <Footer logo={logo} />
     </div>

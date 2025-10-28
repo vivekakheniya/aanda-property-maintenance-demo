@@ -8,6 +8,10 @@ import {
   Ruler,
   Home,
   Paintbrush,
+  DoorOpen,
+  Key,
+  PanelRight,
+  KeyRound,
 } from "lucide-react";
 
 const services = [
@@ -51,6 +55,21 @@ const services = [
     title: "Additions",
     desc: "Extensions, upgrades, and home improvements built to last.",
   },
+  {
+    icon: <DoorOpen size={30} className="text-orange-500" />,
+    title: "Double/Triple Glazing",
+    desc: "High-performance glazing solutions for energy efficiency and security.",
+  },
+  {
+    icon: <PanelRight size={30} className="text-orange-500" />,
+    title: "UPVC & Aluminium Windows and Doors",
+    desc: "Durable, modern, and weather-resistant installations.",
+  },
+  {
+    icon: <KeyRound size={30} className="text-orange-500" />,
+    title: "Composite Doors",
+    desc: "Stylish, strong, and insulated doors for maximum protection.",
+  },
 ];
 
 const ServicesSection = () => {
@@ -67,13 +86,15 @@ const ServicesSection = () => {
         </p>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-stretch">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+              className="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center hover:shadow-lg transition-transform hover:-translate-y-1"
             >
-              <div className="mb-4">{service.icon}</div>
+              <div className="mb-4 flex justify-center items-center bg-orange-50 rounded-full p-3">
+                {service.icon}
+              </div>
               <h3 className="font-semibold text-lg text-gray-800 mb-2">
                 {service.title}
               </h3>
