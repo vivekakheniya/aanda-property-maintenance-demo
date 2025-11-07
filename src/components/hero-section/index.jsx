@@ -21,12 +21,12 @@ const HeroSection = ({ logo }) => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl">
         {/* Logo */}
-        {/* <img
+        <img
           src={logo}
           alt="A & A Property Maintenance Kent Ltd"
           className="mx-auto h-20 w-auto mb-6"
-        /> */}
-        <span className="font-semibold text-lg text-orange-500 cursor-pointer">A & A</span>
+        />
+        {/* <span className="font-semibold text-lg text-orange-500 cursor-pointer">A & A</span> */}
 
         {/* Heading */}
         <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4 text-white">

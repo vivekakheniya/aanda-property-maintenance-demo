@@ -37,11 +37,12 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import logo from "/logo.png";
+import logo from "/aanda-logo.svg";
+import whiteLogo from "/white-logo.svg";
 import ServicesSection from "./components/service";
 import HeroSection from "./components/hero-section";
 import AboutSection from "./components/about";
-import director from "/yogesh.jpg"
+import director from "/about/about.webp"
 import ContactSection from "./components/contact";
 import GallerySection from "./components/gallery";
 
@@ -49,12 +50,12 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <HeroSection logo={logo} />
+      <HeroSection logo={whiteLogo} />
       <ServicesSection />
       <AboutSection directorImage={director} />
       <GallerySection />
       <ContactSection />
-      <Footer logo={logo} />
+      <Footer logo={whiteLogo} />
     </div>
   );
 }

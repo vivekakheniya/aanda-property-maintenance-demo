@@ -1,14 +1,6 @@
 import React, { useState } from "react";
-import {
-  Menu,
-  X,
-  Phone,
-  Home,
-  Wrench,
-  Info,
-  Mail,
-} from "lucide-react";
-import logo from "/logo.png"
+import { Menu, X, Phone, Home, Wrench, Info, Mail } from "lucide-react";
+import logo from "/aanda-logo.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,15 +17,16 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-10 md:px-12 lg:px-16 py-3">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          {/* <img
+          <img
             src={logo}
             alt="logo"
-            className="h-10 w-auto"
-          /> */}
-          <span className="font-semibold text-lg text-gray-800 hover:text-orange-500 cursor-pointer">
-            A & A 
-          </span>
+            className="h-12 w-auto max-h-12 object-contain" // slightly taller for clarity
+          />
         </div>
+
+        {/* <span className="font-semibold text-lg text-gray-800 hover:text-orange-500 cursor-pointer">
+            A & A 
+          </span> */}
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 text-gray-800 font-medium">
